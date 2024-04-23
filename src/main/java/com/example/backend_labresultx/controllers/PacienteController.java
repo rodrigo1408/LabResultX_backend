@@ -25,7 +25,7 @@ public class PacienteController {
 	PacienteRepository repository;
 
 	@PostMapping
-	public ResponseEntity postPaciente(@RequestBody @Valid PacienteRequestDTO body) {
+	public ResponseEntity<?> postPaciente(@RequestBody @Valid PacienteRequestDTO body) {
 		Paciente newPaciente = new Paciente(body);
 
 		this.repository.save(newPaciente);
@@ -33,6 +33,7 @@ public class PacienteController {
 	}
 
 	@GetMapping
+	@SuppressWarnings("rawtypes")
 	public ResponseEntity Paciente() {
 		List<PacienteResponseDTO> pacienteList = this.repository.findAll().stream().map(PacienteResponseDTO::new).toList();
 

@@ -1,0 +1,15 @@
+INSERT INTO TIPO_EXAMES (nome) VALUES 
+('Hemograma Completo'),
+('Glicemia'),
+('Colesterol Total'),
+('Colesterol HDL'),
+('Colesterol LDL'),
+('Colesterol VLDL'),
+('Triglicerídeos'),
+('Hemoglobina Glicada'),
+('Contagem de Plaquetas'),
+('Tempo de Protrombina'),
+('Tempo de Tromboplastina Parcial Ativada'),
+('Testes de Função Hepática'),
+('Testes de Função Renal'),
+('Teste de Gravidez');
